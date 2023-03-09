@@ -51,6 +51,8 @@ if st.button('Get fruit load list'):
    	my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
    	my_data_rows = get_fruit_load_list()	
    	streamlit.dataframe(my_data_rows)
+else:
+     st.write('Have a great day') #displayed when the button is unclicked
 
     
     
