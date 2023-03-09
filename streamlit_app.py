@@ -6,12 +6,12 @@ my_cur = my_cnx.cursor()
 my_cur.execute("SELECT * FROM fruit_load_list")
 my_data_row = my_cur.fetchone()
 streamlit.header("The fruit load list contains:")
-streamlit.text(my_data_row)
+streamlit.dataframe(my_data_row)
 streamlit.header(' 🥣 Breakfast Menu')
 streamlit.text(' 🥗 Omega 3 & Blueberry Oatmeal')
 streamlit.text(' 🐔 Kale, Spinach & Rocket Smoothie')
 streamlit.text(' 🥑Hard-Boiled Free-Range Egg')
-streamlit.dataframe(my_data_row)
+
  
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
